@@ -8,7 +8,19 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="nav_class_table">
+                  <entry key="navigation_schedule_table">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="256" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="navigation_webview">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -17,21 +29,9 @@
                             <option name="y" value="12" />
                           </Point>
                         </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="nav_web_view">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-289" />
-                            <option name="y" value="10" />
-                          </Point>
-                        </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_web_view_to_class_table">
+                            <entry key="action_webview_to_schedult_table">
                               <value>
                                 <LayoutPositions />
                               </value>
