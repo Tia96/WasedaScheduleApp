@@ -22,7 +22,7 @@ class MyWebViewClient : WebViewClient() {
                             "\tandroid.setDataFromJson(JSON.stringify(classData))\n" +
                             "}"
                 )
-                Navigation.findNavController(view).navigate(R.id.action_webview_to_schedule_table)
+                Navigation.findNavController(view).navigate(R.id.action_navigation_webview_to_navigation_schedule_table)
             }
         }
     }

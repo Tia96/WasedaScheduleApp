@@ -1,20 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/navigation_main"
         app:startDestination="@+id/navigation_schedule_table">
 
     <fragment
             android:id="@+id/navigation_schedule_table"
             android:name="com.example.scheduleapp.view.ScheduleTableFragment"
-            android:label="Home" />
+            android:label="Home">
+        <action
+                android:id="@+id/action_navigation_schedule_table_to_navigation_editview"
+                app:destination="@id/navigation_editview" />
+    </fragment>
 
     <fragment
             android:id="@+id/navigation_webview"
             android:name="com.example.scheduleapp.view.WebViewFragment"
             android:label="Login">
         <action
-                android:id="@+id/action_webview_to_schedule_table"
+                android:id="@+id/action_navigation_webview_to_navigation_schedule_table"
                 app:destination="@id/navigation_schedule_table" />
     </fragment>
+
+    <fragment
+            android:id="@+id/navigation_editview"
+            android:name="com.example.scheduleapp.view.EditViewFragment" >
+        <action
+                android:id="@+id/action_navigation_editview_to_navigation_schedule_table"
+                app:destination="@id/navigation_schedule_table" />
+        <argument
+                android:name="positions"
+                app:argType="integer[]" />
+        <action
+                android:id="@+id/action_navigation_editview_to_navigation_chatview"
+                app:destination="@id/navigation_chatview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chatview"
+        android:name="com.example.scheduleapp.view.ChatViewFragment" >
+
+
+        <action
+                android:id="@+id/action_navigation_chatview_to_navigation_editview"
+                app:destination="@id/navigation_editview" />
+        <argument
+                android:name="positions"
+                app:argType="integer[]" />
+    </fragment>
+
 </navigation>

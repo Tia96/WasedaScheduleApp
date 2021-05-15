@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="data"
+                type="com.example.scheduleapp.viewmodel.EditViewModel" />
+    </data>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="1dp"
+            tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:text="@{data.title}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                    android:text="授業名"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{data.selected.text}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                    android:text="教室"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{data.selected.room}" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                    android:text="教員名"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{data.selected.teachers}" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                    android:text="チャット欄"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/chatView" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

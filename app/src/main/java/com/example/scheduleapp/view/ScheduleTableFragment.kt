@@ -1,6 +1,6 @@
 package com.example.scheduleapp.view
+
 import android.os.Bundle
-import android.util.Log
 import android.util.TypedValue.COMPLEX_UNIT_DIP
 import android.util.TypedValue.applyDimension
 import android.view.LayoutInflater
@@ -10,6 +10,9 @@ import android.widget.TableRow
 import androidx.core.view.children
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import com.example.scheduleapp.R
 import com.example.scheduleapp.databinding.*
 import com.example.scheduleapp.model.ClassData
 import com.example.scheduleapp.model.HeaderData
@@ -31,7 +34,6 @@ class ScheduleTableFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         setUpTableLayout()
-        Log.d("Debug", "SetUP")
     }
 
     private fun setUpTableLayout() {
@@ -57,6 +59,13 @@ class ScheduleTableFragment : Fragment() {
                         val classBinding = TextviewClassBinding.inflate(layoutInflater, child, true)
                         classBinding.root.layoutParams.width = applyDimension(COMPLEX_UNIT_DIP, (widthDP - 40) / ScheduleModel.Row, resources.displayMetrics).toInt()
                         classBinding.data = ScheduleModel.scheduleData[y][x] as ClassData
+
+                        classBinding.editButton.setOnClickListener { view ->
+                            run {
+                                val action = ScheduleTableFragmentDirections.actionNavigationScheduleTableToNavigationEditview(intArrayOf(x, y))
+                                view.findNavController().navigate(action)
+                            }
+                        }
                     }
                 }
             }

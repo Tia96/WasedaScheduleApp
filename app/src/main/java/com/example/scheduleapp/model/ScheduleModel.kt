@@ -17,7 +17,8 @@ data class ClassData(
     val semester: Semester = Semester.AllSeason,
     val weekDay: WeekDay = WeekDay.Mon,
     val teachers: String = "",
-    val room: String = ""
+    val room: String = "",
+    val chats: List<String> = listOf()
 ) : ScheduleData
 
 data class HeaderData(override val type: ScheduleType, override var text: String) : ScheduleData
