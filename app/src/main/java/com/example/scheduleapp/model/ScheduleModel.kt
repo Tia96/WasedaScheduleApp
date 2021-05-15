@@ -1,6 +1,5 @@
 package com.example.scheduleapp.model
 
-import android.util.Log
 import android.webkit.JavascriptInterface
 import org.json.JSONObject
 
@@ -8,7 +7,7 @@ enum class Semester { AllSeason, Spring, Fall }
 
 enum class WeekDay(val day: Int) { None(0), Mon(1), Tue(2), Wed(3), Thu(4), Fri(5), Sat(6), Sun(7) }
 
-enum class ScheduleType(val type: Int) { Header(0), Class(1) }
+enum class ScheduleType {Class,  VerticalHeader, HorizontalHeader}
 
 data class ClassData(
     override val type: ScheduleType = ScheduleType.Class,
@@ -21,7 +20,7 @@ data class ClassData(
     val room: String = ""
 ) : ScheduleData
 
-data class HeaderData(override val type: ScheduleType = ScheduleType.Header, override var text: String) : ScheduleData
+data class HeaderData(override val type: ScheduleType, override var text: String) : ScheduleData
 
 interface ScheduleData {
     val type: ScheduleType
@@ -39,10 +38,10 @@ object ScheduleModel {
 
     init {
         for (y in 1 until MaxRow) {
-            scheduleData[y][0] = HeaderData(text = y.toString())
+            scheduleData[y][0] = HeaderData(type = ScheduleType.VerticalHeader, text = y.toString())
         }
         for (x in 0 until MaxCol) {
-            scheduleData[0][x] = HeaderData(text = WeekDay.values()[x].toString())
+            scheduleData[0][x] = HeaderData(type = ScheduleType.HorizontalHeader, text = WeekDay.values()[x].toString())
         }
     }
 
