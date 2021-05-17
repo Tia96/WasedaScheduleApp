@@ -18,7 +18,8 @@ data class ClassData(
     val weekDay: WeekDay = WeekDay.Mon,
     val teachers: String = "",
     val room: String = "",
-    val chats: List<String> = listOf()
+    val chats: MutableList<String> = mutableListOf(),
+    val bitmapCache: MutableList<String> = mutableListOf()
 ) : ScheduleData
 
 data class HeaderData(override val type: ScheduleType, override var text: String) : ScheduleData
