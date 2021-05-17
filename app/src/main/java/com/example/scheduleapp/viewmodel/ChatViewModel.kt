@@ -10,10 +10,10 @@ class ChatViewModel(x: Int, y: Int): ViewModel() {
     val editText = MutableLiveData("")
 
     fun addChatText(str: String) {
-        selected.chats.add(str)
+        selected.chats.add("Text:$str")
     }
 
     fun addChatImage(str: String) {
-        selected.bitmapCache.add(str)
+        selected.chats.add("Image:$str")
     }
 }

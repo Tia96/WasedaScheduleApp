@@ -38,25 +38,29 @@ class ChatViewFragment : Fragment() {
         }
 
         val chatContents = chatViewModel.selected.chats
-        for (chatText in chatContents) {
-            TextviewChatBinding.inflate(inflater, binding.chatLayoutView, true).root.run {
-                text = chatText
-            }
-        }
+        for (data in chatContents) {
+            val type = data.substring(0, data.indexOf(":"))
+            val content = data.substring(data.indexOf(":") + 1)
+            when (type) {
+                "Text" -> {
+                    TextviewChatBinding.inflate(inflater, binding.chatLayoutView, true).root.run {
+                        text = content
+                    }
+                }
+                "Image" -> {
+                    var jpegArray: ByteArray
+                    context?.openFileInput(content).use {
+                        jpegArray = it?.readBytes() ?: byteArrayOf()
+                    }
 
-        val imageContents = chatViewModel.selected.bitmapCache
-        for (imageName in imageContents) {
-            var jpegArray: ByteArray
-            context?.openFileInput(imageName).use {
-                jpegArray = it?.readBytes() ?: byteArrayOf()
-            }
-
-            val bitmap = BitmapFactory.decodeByteArray(jpegArray, 0, jpegArray.size)
-            ImageviewChatBinding.inflate(layoutInflater, binding.chatLayoutView, true).root.run {
-                val (width, height) = calcImageLayoutSize(bitmap.width, bitmap.height, 300.0f, 400.0f)
-                layoutParams.width = width
-                layoutParams.height = height
-                setImageBitmap(bitmap)
+                    val bitmap = BitmapFactory.decodeByteArray(jpegArray, 0, jpegArray.size)
+                    ImageviewChatBinding.inflate(layoutInflater, binding.chatLayoutView, true).root.run {
+                        val (width, height) = calcImageLayoutSize(bitmap.width, bitmap.height, 300.0f, 400.0f)
+                        layoutParams.width = width
+                        layoutParams.height = height
+                        setImageBitmap(bitmap)
+                    }
+                }
             }
         }
         binding.chatView.post { binding.chatView.fullScroll(View.FOCUS_DOWN) }
@@ -68,6 +72,7 @@ class ChatViewFragment : Fragment() {
                 }
                 binding.chatView.post { binding.chatView.fullScroll(View.FOCUS_DOWN) }
                 chatViewModel.addChatText(chatViewModel.editText.value!!)
+                chatViewModel.editText.value = ""
             }
         }
 

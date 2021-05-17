@@ -1,5 +1,6 @@
 package com.example.scheduleapp.model
 
+import android.graphics.Color
 import android.webkit.JavascriptInterface
 import org.json.JSONObject
 
@@ -7,7 +8,7 @@ enum class Semester { AllSeason, Spring, Fall }
 
 enum class WeekDay(val day: Int) { None(0), Mon(1), Tue(2), Wed(3), Thu(4), Fri(5), Sat(6), Sun(7) }
 
-enum class ScheduleType {Class,  VerticalHeader, HorizontalHeader}
+enum class ScheduleType { Class, VerticalHeader, HorizontalHeader }
 
 data class ClassData(
     override val type: ScheduleType = ScheduleType.Class,
@@ -16,10 +17,10 @@ data class ClassData(
     val thPeriod: Int = 0,
     val semester: Semester = Semester.AllSeason,
     val weekDay: WeekDay = WeekDay.Mon,
-    val teachers: String = "",
-    val room: String = "",
+    var teachers: String = "",
+    var room: String = "",
     val chats: MutableList<String> = mutableListOf(),
-    val bitmapCache: MutableList<String> = mutableListOf()
+    var color: Int = Color.rgb(0x81, 0xD4, 0xFA)
 ) : ScheduleData
 
 data class HeaderData(override val type: ScheduleType, override var text: String) : ScheduleData

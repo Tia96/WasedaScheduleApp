@@ -1,5 +1,6 @@
 package com.example.scheduleapp.viewmodel
 
+import android.graphics.Color
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.scheduleapp.model.ClassData
@@ -17,4 +18,8 @@ class EditViewModel(x: Int, y: Int) : ViewModel() {
         7 -> "日曜"
         else -> ""
     } + y.toString() + "限"
+
+    fun changeColor(color: Int) {
+        selected.value?.color = color
+    }
 }

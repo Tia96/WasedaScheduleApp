@@ -10,6 +10,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Debug" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -36,8 +37,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="630da967-d6a0-4246-bc22-99d49c91d5a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/imageview_chat.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/textview_chat.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -52,18 +52,23 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/model/ScheduleModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/model/ScheduleModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/view/ChatViewFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/view/ChatViewFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/view/EditViewFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/view/EditViewFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/view/ScheduleTableFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/view/ScheduleTableFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/viewmodel/ChatViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/viewmodel/ChatViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/viewmodel/WebViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sakura.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/viewmodel/EditViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/viewmodel/EditViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/scheduleapp/viewmodel/ScheduleDataViewModel.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chatview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chatview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_editview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_editview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/navigation_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/navigation_header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/textview_class.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/textview_class.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/navigation_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/navigation_menu.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/home/taiki/.android/avd/Pixel_4_XL_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@e50d620c]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -92,8 +97,8 @@
         <option value="Kotlin File" />
         <option value="valueResourceFile" />
         <option value="Kotlin Class" />
-        <option value="resourceFile" />
         <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -110,9 +115,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="VirtualDevicePath@/home/taiki/.android/avd/Pixel_4_XL_API_30.avd" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-05-17T01:53:26.092112Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="SerialNumber@e50d620c" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-05-17T08:41:30.005554Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SelectDeploymentTargetsDialog.selectedDevices" value="SerialNumber@e50d620c" />
     <property name="android-custom-view/home/taiki/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.2.0/3e159bfab49c7e6495fe374e6e5e1e989ee21dcf/recyclerview-1.2.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
     <property name="android-custom-view/home/taiki/Android/Sdk/sources/android-30/android/widget/FrameLayout.java_SELECTED" value="FrameLayout" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
@@ -271,10 +277,10 @@
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
     <state x="1043" y="519" width="867" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1620920966962" />
-    <state x="693" y="792" width="524" height="514" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621188717859">
+    <state x="693" y="792" width="524" height="514" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621225883328">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
-    <state x="693" y="792" width="524" height="514" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621188717859" />
+    <state x="693" y="792" width="524" height="514" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621225883328" />
     <state x="705" y="813" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1620897949416">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
@@ -283,45 +289,49 @@
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
     <state x="696" y="925" width="518" height="333" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1620891085551" />
-    <state x="360" y="645" width="1200" height="800" key="AVDManager" timestamp="1620833079159">
+    <state x="360" y="645" width="1200" height="800" key="AVDManager" timestamp="1621240722551">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
-    <state x="360" y="645" width="1200" height="800" key="AVDManager/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1620833079159" />
+    <state x="360" y="645" width="1200" height="800" key="AVDManager/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621240722551" />
     <state x="543" y="803" width="824" height="491" key="AndroidCreateResourceDirectoryDialog" timestamp="1620971903424">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
     <state x="543" y="803" width="824" height="491" key="AndroidCreateResourceDirectoryDialog/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1620971903424" />
-    <state x="543" y="803" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1621169243289">
+    <state x="543" y="803" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1621238589900">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
-    <state x="543" y="803" width="824" height="491" key="AndroidCreateResourceFileDialog/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621169243289" />
+    <state x="543" y="803" width="824" height="491" key="AndroidCreateResourceFileDialog/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621238589900" />
     <state x="743" y="803" width="424" height="491" key="FileChooserDialogImpl" timestamp="1621222468398">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
     <state x="743" y="803" width="424" height="491" key="FileChooserDialogImpl/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621222468398" />
-    <state width="1866" height="225" key="GridCell.Tab.0.bottom" timestamp="1621222613478">
+    <state width="1866" height="269" key="GridCell.Tab.0.bottom" timestamp="1621240904583">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
-    <state width="1866" height="225" key="GridCell.Tab.0.bottom/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621222613478" />
-    <state width="1866" height="225" key="GridCell.Tab.0.center" timestamp="1621222613478">
+    <state width="1866" height="269" key="GridCell.Tab.0.bottom/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621240904583" />
+    <state width="1866" height="269" key="GridCell.Tab.0.center" timestamp="1621240904583">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
-    <state width="1866" height="225" key="GridCell.Tab.0.center/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621222613478" />
-    <state width="1866" height="225" key="GridCell.Tab.0.left" timestamp="1621222613478">
+    <state width="1866" height="269" key="GridCell.Tab.0.center/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621240904583" />
+    <state width="1866" height="269" key="GridCell.Tab.0.left" timestamp="1621240904583">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
-    <state width="1866" height="225" key="GridCell.Tab.0.left/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621222613478" />
-    <state width="1866" height="225" key="GridCell.Tab.0.right" timestamp="1621222613478">
+    <state width="1866" height="269" key="GridCell.Tab.0.left/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621240904583" />
+    <state width="1866" height="269" key="GridCell.Tab.0.right" timestamp="1621240904583">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
-    <state width="1866" height="225" key="GridCell.Tab.0.right/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621222613478" />
+    <state width="1866" height="269" key="GridCell.Tab.0.right/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621240904583" />
     <state x="449" y="680" width="1022" height="737" key="SettingsEditor" timestamp="1620874287801">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
     <state x="449" y="680" width="1022" height="737" key="SettingsEditor/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1620874287801" />
-    <state x="623" y="751" width="672" height="678" key="search.everywhere.popup" timestamp="1620925844719">
+    <state x="665" y="854" width="580" height="390" key="com.android.tools.idea.run.deployment.SelectMultipleDevicesDialog" timestamp="1621240887716">
       <screen x="0" y="519" width="1920" height="1053" />
     </state>
-    <state x="623" y="751" width="672" height="678" key="search.everywhere.popup/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1620925844719" />
+    <state x="665" y="854" width="580" height="390" key="com.android.tools.idea.run.deployment.SelectMultipleDevicesDialog/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621240887716" />
+    <state x="623" y="751" width="672" height="678" key="search.everywhere.popup" timestamp="1621230630796">
+      <screen x="0" y="519" width="1920" height="1053" />
+    </state>
+    <state x="623" y="751" width="672" height="678" key="search.everywhere.popup/0.519.1920.1053/1920.0.1080.1920@0.519.1920.1053" timestamp="1621230630796" />
   </component>
 </project>

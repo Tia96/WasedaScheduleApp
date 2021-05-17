@@ -23,63 +23,160 @@
 
             <TextView
                     android:text="@{data.title}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="20dp" />
+
+            <TextView
+                    android:text="授業カラー"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp" />
+
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:checkedButton="@id/radioButton1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp">
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                <RadioButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/radioButton1"
+                        android:button="@null" />
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                <RadioButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/radioButton2"
+                        android:button="@null" />
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                <RadioButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/radioButton3"
+                        android:button="@null" />
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                <RadioButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/radioButton4"
+                        android:button="@null" />
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+            </RadioGroup>
 
             <TextView
                     android:text="授業名"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp" />
 
             <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/classNameInputView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@{data.selected.text}" />
+                        android:text="@={data.selected.text}" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                     android:text="教室"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp" />
 
             <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@{data.selected.room}" />
+                        android:text="@={data.selected.room}" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                     android:text="教員名"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp" />
 
             <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@{data.selected.teachers}" />
+                        android:text="@={data.selected.teachers}" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                    android:text="チャット欄"
+            <Button
+                    android:id="@+id/chatView"
+                    android:text="メモ欄"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:id="@+id/chatView" />
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp" />
 
         </LinearLayout>
     </ScrollView>

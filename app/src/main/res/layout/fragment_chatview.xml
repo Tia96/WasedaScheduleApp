@@ -41,11 +41,13 @@
             </LinearLayout>
         </ScrollView>
 
-        <Button
-                android:text=""
+        <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/selectImageButton"
+                android:focusable="true"
+                android:clickable="true"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -62,14 +64,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@={data.editText}"
-                    android:hint="hint" />
+                    android:hint="メモ内容" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-                android:text=""
+        <ImageButton
+                android:src="@android:drawable/ic_menu_send"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/enterChatButton"
+                android:focusable="true"
+                android:clickable="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
